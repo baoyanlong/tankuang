@@ -62,6 +62,15 @@
     __weak YLTanKuangView *tanKuangView1 = tanKuangView;
     __weak typeof(self) weakSelf = self;
     tanKuangView.clickBlock = ^(UIView *itemView) {
+//        if (itemView.tag == 101) {// 点击选项一
+//            
+//        }
+//        if (itemView.tag == 102) {// 点击选项二
+//            
+//        }
+//        if (itemView.tag == 103) {// 点击选项三
+//            
+//        }
         YLItemView *itemView1 = (YLItemView*)itemView;
         weakSelf.textField.text = itemView1.titleLabel.text;
         [tanKuangView1 destroyTanKuangView];
